@@ -15,4 +15,6 @@ class Core::Account < ApplicationRecord
   normalizes :fax, with: ->(value) { value.strip }
 
   has_one :website, dependent: :destroy, class_name: 'Core::Website', foreign_key: :core_account_id
+
+  has_many :agents, dependent: :nullify, class_name: 'Core::Agent'
 end

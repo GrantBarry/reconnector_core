@@ -4,8 +4,10 @@
 # model remove the "{}" from the fixture names and add the columns immediately
 # below each fixture, per the syntax in the comments below
 #
-one: {}
-# column: value
-#
-two: {}
-# column: value
+one:
+  account: one
+  description: Test Website desciption text.
+  title: Test website title
+  keywords:  These are some keywords
+  enquiry_phone: 456-789-1234
+  enquiry_email: enquiries@testing.co

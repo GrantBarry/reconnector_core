@@ -4,8 +4,9 @@
 # model remove the "{}" from the fixture names and add the columns immediately
 # below each fixture, per the syntax in the comments below
 #
-one: {}
-# column: value
-#
-two: {}
-# column: value
+one:
+  company_name: Test Company
+  legal_name: Test Company LLC
+  email: testco@testing.co
+  phone: 555-123-4567
+  fax: 555-987-6543
