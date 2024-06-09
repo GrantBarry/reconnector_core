@@ -16,5 +16,5 @@ class Core::Account < ApplicationRecord
 
   has_one :website, dependent: :destroy, class_name: 'Core::Website', foreign_key: :core_account_id
 
-  has_many :agents, dependent: :nullify, class_name: 'Core::Agent'
+  has_many :agents, dependent: :nullify, class_name: 'Core::Agent', foreign_key: :core_account_id
 end
